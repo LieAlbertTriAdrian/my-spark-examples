@@ -1,0 +1,2 @@
+../../bin/spark-submit --master local[4] --deploy-mode client --executor-memory 1g \
+--name wordcount --conf "spark.app.id=wordcount" word_count.py hdfs://127.0.1.1:9000/user/alberttriadrian/spark/input_file.txt 2
