@@ -1,0 +1,1 @@
+../../bin/spark-submit --class "GraphXPageRank" --master local target/scala-2.10/graph-x-page-rank-scala_2.10-1.0.jar
