@@ -1,0 +1,1 @@
+../../bin/spark-submit --driver-memory 512m --class "SparkStreaming" --master local target/scala-2.10/spark-streaming_2.10-1.0.jar
