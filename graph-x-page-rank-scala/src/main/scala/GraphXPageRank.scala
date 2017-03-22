@@ -10,7 +10,8 @@ object GraphXPageRank {
         val sparkContext = new SparkContext(sparkConf)
 
         val graph = GraphLoader.edgeListFile(sparkContext, FOLLOWERS_FILE_PATH)
-        val ranks = graph.pageRank(0.0001).vertices
+        // val ranks = graph.pageRank(0.0001).vertices
+        // val ranks = graph.staticPageRank(3).vertices
         val users = sparkContext.textFile(USERS_FILE_PATH).map { line =>
             val fields = line.split(",")
 

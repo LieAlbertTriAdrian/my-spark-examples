@@ -1,0 +1,1 @@
+../../bin/spark-submit --class "ScalaHdfs" --master local target/scala-2.10/scala-hdfs_2.10-1.0.jar /user/alberttriadrian/spark/input/scala-hdfs.txt /user/alberttriadrian/spark/output/
