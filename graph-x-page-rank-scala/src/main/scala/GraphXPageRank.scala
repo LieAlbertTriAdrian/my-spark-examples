@@ -19,7 +19,7 @@ object GraphXPageRank {
         }
         val ranksByUsername = users.join(ranks).map {
             case (id, (username, rank)) => (username, rank)
-        }        
+        }
 
         println(ranksByUsername.collect().mkString("\n"))
 
