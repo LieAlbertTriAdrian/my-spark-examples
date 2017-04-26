@@ -16,13 +16,14 @@ object SparkKafkaStreaming {
             System.exit(1)
         }
 
+        println(args)
         val Array(brokers, topics) = args
         println(brokers)
         println(topics)
 
         // Create context with 2 second batch interval
         val sparkConf = new SparkConf().setAppName("SparkKafkaStreaming")
-        val ssc = new StreamingContext(sparkConf, Seconds(2))
+        val ssc = new StreamingContext(sparkConf, Seconds(10))
 
         // Create direct kafka stream with brokers and topics
         val topicsSet = topics.split(",").toSet

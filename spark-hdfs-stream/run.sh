@@ -1,1 +1,1 @@
-../../bin/spark-submit --class "ScalaHdfsStreaming" --master local target/scala-2.10/scala-hdfs-streaming_2.10-1.0.jar /user/alberttriadrian/spark/input/ /user/alberttriadrian/spark/output/
+../../bin/spark-submit --class "ScalaHdfsStreaming" --master local target/scala-2.10/scala-hdfs-streaming_2.10-1.0.jar /user/alberttriadrian/spark/sample/hdfs-streaming/input /user/alberttriadrian/spark/sample/hdfs-streaming/output3

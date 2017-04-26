@@ -17,6 +17,8 @@ object ScalaHdfsStreaming {
         var  outputFilePath = "hdfs://127.0.1.1:9000"
         outputFilePath = outputFilePath.concat(args(1))
 
+        println(inputFilePath)
+
         val textFile = sparkStreamingContext.textFileStream(inputFilePath)
         val counts = textFile.flatMap(line => line.split(" "))
                          .map(word => (word, 1))
